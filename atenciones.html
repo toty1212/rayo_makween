@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #141955; padding: 1%;">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #141955;">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="Logo.png" width="50" height="40" class="d-inline-block align-top" alt="">
@@ -41,25 +41,25 @@
         </div>
     </nav>
     <div class="container mt-5" style="padding: 5%;">
-        <h2 class="mb-4" style="color: #d40a03; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; text-shadow: 0.5px 1px #303131;">Formulario de Contacto</h2>
         <form id="contactForm" method="post" action="submit_form.php">
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre" style="color: white;">Nombre:</label>
                 <input type="text" class="form-control" id="nombre" name="nombre" required>
             </div>
             <div class="form-group">
-                <label for="email">Correo electrónico:</label>
+                <label for="email" style="color: white;">Correo electrónico:</label>
                 <input type="email" class="form-control" id="email" name="email" required>
             </div>
             <div class="form-group">
-                <label for="asunto">Asunto:</label>
+                <label for="asunto" style="color: white;">Asunto:</label>
                 <input type="text" class="form-control" id="asunto" name="asunto" required>
             </div>
             <div class="form-group">
-                <label for="mensaje">Mensaje:</label>
+                <label for="mensaje" style="color: white;">Mensaje:</label>
                 <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
             </div>
-            <button type="submit" class="btn btn-danger">Enviar</button>
+            <button type="button" class="btn" style="background-color: #1f2dc9;color: white;" onclick='document.getElementById("enviar").innerHTML = "Enviado Exitosamente!"'>Enviar</button>
+            <p id="enviar" style="color:white"></p>
         </form>
     </div>
 
